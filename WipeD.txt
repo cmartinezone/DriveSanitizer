@@ -1,0 +1,2 @@
+select disk %Dn%
+clean
