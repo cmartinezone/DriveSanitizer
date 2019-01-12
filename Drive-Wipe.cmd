@@ -13,13 +13,13 @@ diskpart /s "Diskpart\Drive-Wipe.txt"
 cls
 
 ::Call SDelete to wipe the drive in 3 passes, free space, zero space
-call "SDelete\sdelete64.exe" -p 3 -c -z %Dn% 
+SDelete\sdelete64.exe -p 3 -c -z %Dn% 
 
 ::Change the Dn varialble value for ghost64 which it works with +1 drive index 
 set /A Dn+=1
 
 ::Call ghost to apply the MSDOS image to the drive cleaned 
-call "MSDOSGhost\ghost64.exe" -batch -clone,mode=restore,src=MSDOSGhost\dos.gho,dst=%Dn% -sure -quiet -blind -pmbr
+MSDOSGhost\ghost64.exe -batch -clone,mode=restore,src=MSDOSGhost\dos.gho,dst=%Dn% -sure -quiet -blind -pmbr
 
 If %ERRORLEVEL% NEQ 0 goto Error
 

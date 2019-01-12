@@ -14,7 +14,7 @@ echo.
 diskpart /s DiskPart\Drive-List.txt
 echo.
 echo Please confirm if you want to wipe the drives connect on this system?
-echo.
+
 ::VBScript dialog to confirm if the user want procede with the action 
 ::Errorlevel global variable value will be different than 2 if the user does not to proceed with this action
 ::Window will close if the user does not confirm to proceed 
