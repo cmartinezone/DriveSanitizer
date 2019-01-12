@@ -19,7 +19,8 @@ call "SDelete\sdelete64.exe" -p 3 -c -z %Dn%
 set /A Dn+=1
 
 ::Call ghost to apply the MSDOS image to the drive cleaned 
-call "MSDOSGhost\ghost64.exe" -clone,mode=restore,src='MSDOSGhost\dos.gho',dst=%Dn% -sure -quiet -blind -pmbr
+call "MSDOSGhost\ghost64.exe" -batch -clone,mode=restore,src=MSDOSGhost\dos.gho,dst=%Dn% -sure -quiet -blind -pmbr
+
 If %ERRORLEVEL% NEQ 0 goto Error
 
 ::Restore variable initial value 
