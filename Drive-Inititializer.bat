@@ -6,38 +6,14 @@
 
 Title Checking Drives in progress...
 
-SET /A "Dn=0"
+::Loop for checking drives availbles connect on the system and start wiping 
+
+FOR /L %%A IN (0,1,10) DO (
+
+SET /A "Dn=%%A"
 diskpart /s Diskpart/Drive-Check.txt &&  start Drive-Wipe.cmd"
 
-SET /A "Dn=1"
-diskpart /s Diskpart/Drive-Check.txt &&  start Drive-Wipe.cmd"
-
-SET /A "Dn=2"
-diskpart /s Diskpart/Drive-Check.txt &&  start Drive-Wipe.cmd"
-
-SET /A "Dn=3"
-diskpart /s Diskpart/Drive-Check.txt &&  start Drive-Wipe.cmd"
-
-SET /A "Dn=4"
-diskpart /s Diskpart/Drive-Check.txt &&  start Drive-Wipe.cmd"
-
-SET /A "Dn=5"
-diskpart /s Diskpart/Drive-Check.txt &&  start Drive-Wipe.cmd"
-
-SET /A "Dn=6"
-diskpart /s Diskpart/Drive-Check.txt &&  start Drive-Wipe.cmd"
-
-SET /A "Dn=7"
-diskpart /s Diskpart/Drive-Check.txt &&  start Drive-Wipe.cmd"
-
-SET /A "Dn=8"
-diskpart /s Diskpart/Drive-Check.txt &&  start Drive-Wipe.cmd"
-
-SET /A "Dn=9"
-diskpart /s Diskpart/Drive-Check.txt &&  start Drive-Wipe.cmd"
-
-SET /A "Dn=10"
-diskpart /s Diskpart/Drive-Check.txt &&  start Drive-Wipe.cmd"
+)
 
 Title !!Warning!! Do not close this Window until everything get completed. 
 exit 
