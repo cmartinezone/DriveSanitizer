@@ -3,7 +3,7 @@
 ' First function to interact with the user if the user want to continue with the action
 Function Start()
 Dim MyVar
-MyVar = MsgBox ("Continuaing will erase all data on the drives connected to this system. Are you sure you want to coninue?", vbExclamation + vbYesNo, "SuperSurplus 2.0: Warning!!!")
+MyVar = MsgBox ("Continuaing will erase all data on the drives connected to this system. Are you sure you want to coninue?", vbExclamation + vbYesNo, "DriveSanitizer 2.0: Warning!!!")
    ' MyVar contains either 6 or 7, depending on which button is clicked.
    If MyVar = 6 Then
    RunWipe()   
@@ -16,7 +16,7 @@ End Function
 'Function if the user doesn't want to continue with the action
 Function close()
 Dim MyVar
-MyVar = MsgBox ("Process is not complete. if you want to quit this process, action will not execute click 'Cancel'" & vbCrLf & vbCrLf & "To Continue with this process, click 'Retry'" ,  vbQuestion + vbRetryCancel, "SuperSurplus 2.0: Resume")
+MyVar = MsgBox ("Process is not complete. if you want to quit this process, action will not execute click 'Cancel'" & vbCrLf & vbCrLf & "To Continue with this process, click 'Retry'" ,  vbQuestion + vbRetryCancel, "DriveSanitizer 2.0: Resume")
    ' MyVar contains either 4 or 2, depending on which button is clicked.
    If MyVar = 4 Then
    Start()
