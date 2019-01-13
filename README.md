@@ -1,6 +1,6 @@
 # DriveSanitizer Developed by: Carlos Martinez
 This tool it uses SDelete of Microsoft Sysinternals written by Mark Russinovich
-Project for Wiping Multiple Drives at the same time, integration in Windows WinPE using SDelete
+This project uses SDelete to erase multiple computer storage Drives at the same time, it is designed to integrate in Windows WinPE
 
 To integrate this project to a Windows WinPE image you most complete following instruction:
 
