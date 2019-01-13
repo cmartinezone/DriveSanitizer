@@ -1,5 +1,5 @@
 # DriveSanitizer2.0 Developed by: Carlos Martinez
-# This tool it uses SDelete of Microsoft Sysinternals written by Mark Russinovich
+This tool it uses SDelete of Microsoft Sysinternals written by Mark Russinovich
 Project for Wiping Multiple Drives at the same time, integration in Windows WinPE using SDelete
 
 To integrate this project you most complete following instruction:
