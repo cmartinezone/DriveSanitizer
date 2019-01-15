@@ -1,0 +1,4 @@
+select disk %Dn%
+create partition primary
+select partition 1
+active
