@@ -15,11 +15,14 @@ cls
 ::Call SDelete to wipe the drive in 3 passes, free space, zero space
 SDelete\sdelete64.exe -p 3 -c -z %Dn% 
 
+::Create active partition for MSDOS boot
+diskpart /s Diskpart\Drive-Boot.txt
+
 ::Change the Dn varialble value for ghost64 which it works with +1 drive index 
 set /A Dn+=1
 
 ::Call ghost to apply the MSDOS image to the drive cleaned 
-MSDOSGhost\ghost64.exe -batch -clone,mode=restore,src=MSDOSGhost\dos.gho,dst=%Dn% -sure -quiet -blind -pmbr
+MSDOSGhost\ghost64.exe -batch -clone,mode=restore,src=MSDOSGhost\dos.gho,dst=%Dn%:1 -sure -quiet -blind -pmbr
 
 If %ERRORLEVEL% NEQ 0 goto Error
 
