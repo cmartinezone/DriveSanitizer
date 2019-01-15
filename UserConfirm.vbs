@@ -3,7 +3,7 @@
 ' First function to interact with the user if the user want to continue with the action
 Function Start()
 Dim MyVar
-MyVar = MsgBox ("Continuaing will erase all data on the drives connected to this system. Are you sure you want to coninue?", vbExclamation + vbYesNo, "DriveSanitizer 2.0: Warning!!!")
+MyVar = MsgBox ("Continuing will erase all data on the drives connected to this system. Are you sure you want to coninue?", vbExclamation + vbYesNo, "DriveSanitizer 2.0: Warning!!!")
    ' MyVar contains either 6 or 7, depending on which button is clicked.
    If MyVar = 6 Then
    RunWipe()   
