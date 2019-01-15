@@ -15,5 +15,5 @@ diskpart /s Diskpart/Drive-Check.txt &&  start Drive-Wipe.cmd"
 
 )
 
-Title !!Warning!! Do not close this Window until everything get completed. 
+Title !!Warning!! Do not close this Window until everything is completed. 
 exit 

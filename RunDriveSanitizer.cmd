@@ -2,7 +2,7 @@
 ::Created by Carlos Martinez on 9/4/18
 :: Version 2.0 12/31/2018 addiding  VBScript dialog
 
-Title DriveSanitizer 2.0: Do not close this window until everything complete!
+Title DriveSanitizer 2.0: Do not close this window until everything is completed!
 
 ::Import Registry file Entries to omit SDelete dialog  
 reg import "SDelete\sdelete.reg"
