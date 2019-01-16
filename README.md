@@ -17,3 +17,12 @@ To integrate this project to a Windows WinPE image you most complete following i
 6- Unmount WinPE and generate an ISO file, also you can use the boot.wim image from  ( WinPE  ofline directory\media\sources\boot.wim ) and integrate into a WDS PXE Server  (https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-mount-and-customize#unmount-the-windows-pe-image-and-create-media)
 
 one script will develop to automate the steps above :)
+
+# Build WinPE with WinPEBuilder 1/16/2018
+
+Step 1 is still required Download and install Windows ADK and Windows PE add-on link: (https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install)
+
+Now you can use WinPEBuilder (https://github.com/cmartinezone/WinPEBuilder)
+copy all the files and folder from DriveSanitizer root directory and paste all on > WinPEBuilder > Add-Script 
+Run WinPEBuilder.cmd as administrator 
+
