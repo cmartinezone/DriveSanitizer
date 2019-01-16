@@ -1,4 +1,4 @@
-# DriveSanitizer Developed by: Carlos Martinez
+# DriveSanitizer
 This tool it uses SDelete of Microsoft Sysinternals written by Mark Russinovich
 This project uses SDelete to erase multiple computer storage Drives at the same time, it is designed to integrate in a Windows WinPE image
 
